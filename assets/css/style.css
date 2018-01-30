@@ -1,0 +1,40 @@
+body {
+    background-image: url("../images/oldPaper.png")
+    ,url("../images/Wooden-Background-86.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top;
+ }
+
+
+.paperBackground {
+    max-height: 90%;
+    max-width: 90%;
+
+}
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 500px) {
+    .gridmenu {
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .gridmenu {
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .gridmenu {
+        width:100%;
+    }
+
+} */
