@@ -68,7 +68,7 @@ hr {
   }
 
 /* this controls the styling on the created letters */
-  .red {
+  .phraseLetter {
     color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     border: 5px;
@@ -87,6 +87,14 @@ hr {
     padding: 0 10px 0 10px;
     font-size: 24px;
 }
+
+  .wrongLetter {
+    border: 5px;
+    margin-left: 10px;
+    float: left;
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+  }
 
 /* this is to space out the guessing area from the start box */
   .guessingArea {

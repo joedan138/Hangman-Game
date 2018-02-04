@@ -1,30 +1,32 @@
 const phrases = ["boots and spurs",
-"chuck wagon",
-"circle the wagon",
-"dry gulch",
-"gunslinger",
-"high noon",
-"horse",
-"outlaw",
-"sheriff",
-"six shooter",
-"apache",
-"lone ranger",
-"renegade",
-"saloon",
-"beer",
-"whiskey",
-"hitching post",
-"stage coach",
-"railroad",
-"apaloosa",
-"saddle",
-"beef jerky",
-"biscuits and gravy",
-"shootout",
-"rattlesnake",
-"clear leather",
+    "chuck wagon",
+    "circle the wagon",
+    "dry gulch",
+    "gunslinger",
+    "high noon",
+    "horse",
+    "outlaw",
+    "sheriff",
+    "six shooter",
+    "apache",
+    "lone ranger",
+    "renegade",
+    "saloon",
+    "beer",
+    "whiskey",
+    "hitching post",
+    "stage coach",
+    "railroad",
+    "apaloosa",
+    "saddle",
+    "beef jerky",
+    "biscuits and gravy",
+    "shootout",
+    "rattlesnake",
+    "clear leather",
 ]
+
+var phrase = null;
 
 // look up how to parse a JSON into my JS so i can have a big list of potential phrases
 
@@ -43,9 +45,10 @@ $(document).ready(function () {
         for (var i = 0; i < hmPhrase.length; i++) {
             if (hmPhrase[i] == " ") {
                 html += '<div class="spaceChar">' + "&#160;" + '</div>';
-            } else {html += '<div class="red">' + hmPhrase[i] + '</div>';
-        };
-            
+            } else {
+                html += '<div class="phraseLetter">' + hmPhrase[i] + '</div>';
+            };
+
         }
         document.getElementById('guessingArea').innerHTML += html;
         return hmPhrase.split("");
@@ -55,11 +58,9 @@ $(document).ready(function () {
     // this function creates a div under the button for phrase to be guessed
     $("#newGame").on("click", function () {
         $("#guessingArea").empty();
-        phraseGenerator();
-        console.log(35);
+        $("#letterJail").empty();
+        phrase = phraseGenerator();
     });
-
-
 
 
 
@@ -71,6 +72,7 @@ $(document).ready(function () {
     var myButtons;
     var letters;
 
+
     var buttons = function () {
         myButtons = document.getElementById('buttons');
         letters = document.createElement('ul');
@@ -78,7 +80,7 @@ $(document).ready(function () {
         for (var i = 0; i < alphabet.length; i++) {
             letters.id = 'alphabet';
             list = document.createElement('li');
-            list.id = 'letter';
+            list.className = 'letter';
             list.innerHTML = alphabet[i];
             myButtons.appendChild(letters);
             letters.appendChild(list);
@@ -86,8 +88,34 @@ $(document).ready(function () {
     }
 
     buttons();
-    $("#reset").on("click", function () {
-        $("#guessingArea").empty();
+// how many lives you have
+    var lifeCount = 9;
+    $("#lifeCount").text(lifeCount)
+
+
+    $(".letter").on("click", function (event) {
+        var letter = event.currentTarget.innerHTML;
+        if (phrase.includes(letter)) {
+            $(".phraseLetter").each(function (idx, div) {
+                if (div.innerHTML === letter) {
+                    $(div).css('color', 'red');
+                }
+            });
+
+        } else {
+
+            var wrongLetter = ("<div class='wrongLetter'>"+ letter + "</div>");
+            $("#letterJail").append(wrongLetter);
+            lifeCount--;
+            $("#lifeCount").text(lifeCount);    
+            if (lifeCount === 0) {
+                alert("You have lost");
+                $("#guessingArea").empty();
+                $("#letterJail").empty();
+                lifeCount = 9;
+                $("#lifeCount").text(lifeCount)
+            }        
+        }
     });
 });
 
