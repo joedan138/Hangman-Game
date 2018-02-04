@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +10,35 @@
     <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="row">
             <h1 class="title col-md-12">hangman</h1>
         </div>
+        <hr>
         <div class="row">
-            <hr>
-            <div class="col-md-2"></div>
-            <p class="col-md-8">
-                Instructions Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui reiciendis voluptates aspernatur, distinctio assumenda nisi accusantium quae veritatis minima beatae asperiores placeat commodi fugiat, dolorum aliquid cum molestias repudiandae?
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <a href="game_page.html" class="btn col-md-4 startButton" role="button">Let's Begin</a>
-        </div>
+            <div>
 
+            </div>
+        </div>
+        <div class="row" id="blankBox">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="buttons">
+
+            </div>
+
+            <div class="col-md-4"></div>
+            <button type="button" class="btn btn-danger col-md-4 newGameButton" id="newGame">New Game</button>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row guessingArea">
+            <div class="col-md-2"></div>
+            <div class="col-md-10" id="guessingArea">
+
+            </div>
+        </div>
 
     </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
-
 </html>

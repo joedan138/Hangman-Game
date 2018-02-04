@@ -3,38 +3,92 @@ body {
     ,url("../images/Wooden-Background-86.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: top;
+
  }
 
-
-.paperBackground {
-    max-height: 90%;
-    max-width: 90%;
-
+.title {
+    text-align: center;
+    font-family: 'Rye', cursive;
+    margin-top: 51px;
+    font-size: 88px;
+    text-transform: uppercase;
+    color: black;
 }
 
-
-
-
-
-
-
-/* @media only screen and (max-width: 500px) {
-    .gridmenu {
-        width:100%;
-    }
-
+/* buttons */
+.startButton {
+  background-color:#000000;
+  color:#ffffff;
+  font-family: 'Rye', cursive;
+  margin-top: 200px;
+  letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 500px) {
-    .gridmenu {
-        width:100%;
-    }
-
+.startButton :hover {
+  background: rgb(133, 130, 130);
+  color: rgb(133, 130, 130);
 }
 
-@media only screen and (max-width: 500px) {
-    .gridmenu {
-        width:100%;
-    }
+.buttonMargin {
+    margin-top: 200px;
+}
 
-} */
+.newGameButton {
+  margin-top: 30px;
+}
+
+/* line under title */
+hr {
+    border-top: 2px dashed ;
+    max-width: 70%;
+}
+
+/* clickable letters to guess the phrase */
+#alphabet li {
+    float:left;
+    margin: 0 10px 10px 0;
+    list-style:none;
+    width:35px;
+    height:30px;
+    padding-top:5px;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border-radius: 5px;
+    border: solid 1px white;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  #alphabet li:hover{
+    background: rgb(133, 130, 130);
+    border: solid 1px white;
+    color:white;
+  }
+
+/* this controls the styling on the created letters */
+  .red {
+    color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    border: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    margin-left: 10px;
+    float: left;
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+  }
+
+  .spaceChar {
+    border: 5px;
+    margin-left: 10px;
+    float: left;
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+}
+
+/* this is to space out the guessing area from the start box */
+  .guessingArea {
+      padding-top: 60px;
+  }
