@@ -15,6 +15,12 @@ body {
     color: black;
 }
 
+.instructions {
+  font-family: 'Rye', cursive;
+  text-align: center;
+  font-size: 24px;
+}
+
 /* buttons */
 .startButton {
   background-color:#000000;
@@ -35,6 +41,7 @@ body {
 
 .newGameButton {
   margin-top: 30px;
+  font-family: 'Rye', cursive;
 }
 
 /* line under title */
@@ -58,7 +65,7 @@ hr {
     border: solid 1px white;
     text-align: center;
     text-transform: uppercase;
-
+    font-family: 'Rye', cursive;
   }
 
   #alphabet li:hover{
@@ -99,4 +106,21 @@ hr {
 /* this is to space out the guessing area from the start box */
   .guessingArea {
       padding-top: 60px;
+  }
+
+  #lifeCount {
+    font-size: 24px;
+    font-family: 'Rye', cursive;
+
+  }
+
+  .wrongLetter {
+    font-size: 24px;
+    font-family: 'Rye', cursive;
+    text-transform: uppercase;
+  }
+
+  .bottomTitles {
+    font-family: 'Rye', cursive;
+    text-transform: uppercase;
   }

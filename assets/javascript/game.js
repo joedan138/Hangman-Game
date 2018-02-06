@@ -54,11 +54,17 @@ $(document).ready(function () {
         return hmPhrase.split("");
     }
 
+    var reset = function() {
+        $("#guessingArea").empty();
+        $("#letterJail").empty();
+        lifeCount = 9;
+        $("#lifeCount").text(lifeCount)
+    }
+
 
     // this function creates a div under the button for phrase to be guessed
     $("#newGame").on("click", function () {
-        $("#guessingArea").empty();
-        $("#letterJail").empty();
+        reset();
         phrase = phraseGenerator();
     });
 
@@ -110,10 +116,7 @@ $(document).ready(function () {
             $("#lifeCount").text(lifeCount);    
             if (lifeCount === 0) {
                 alert("You have lost");
-                $("#guessingArea").empty();
-                $("#letterJail").empty();
-                lifeCount = 9;
-                $("#lifeCount").text(lifeCount)
+                reset();
             }        
         }
     });
