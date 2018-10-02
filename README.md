@@ -1,4 +1,5 @@
-# Hangman Game
+# Hangman Game  
+## Wild West Edition
+----- 
 
-Wild West Edition
-------
+#### Table of Contents
