@@ -2,11 +2,11 @@
 
 
 ### Table of Contents
-1. [Description](Description)
-2. [Languages & Libraries](Languages & Libraries)
-3. [Challenges](Challenges)
-4. [Issues](Issues)
-5. [Desired Features](Desired Features)
+1. [Description](Description)  
+2. [Languages & Libraries](Languages & Libraries)  
+3. [Challenges](Challenges)  
+4. [Issues](Issues)  
+5. [Desired Features](Desired Features)  
 
 
 
