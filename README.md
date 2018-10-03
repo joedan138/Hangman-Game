@@ -3,13 +3,12 @@
 
 ### Table of Contents
 1. [Description](https://github.com/joedan138/hangman-game#description)  
-2. [Languages And Libraries](https://github.com/joedan138/hangman-game#languages-and-libraries)  
+2. [Languages & Libraries](https://github.com/joedan138/hangman-game#languages)  
 3. [Challenges](https://github.com/joedan138/hangman-game#challenges)  
 4. [Issues](https://github.com/joedan138/hangman-game#issues)  
 5. [Desired Features](https://github.com/joedan138/hangman-game#desired-features)  
 
 
-<a name="Description"></a>
 #### Description
 
 
@@ -41,7 +40,7 @@ We want to use a lot pressure while using no pressure at all. If you hypnotize i
 
 
 
-#### Languages
+#### <a name="languages"></a>Languages & Libraries
 
 
 In your imagination you can go anywhere you want. Every highlight needs it's own personal shadow. This is the way you take out your flustrations.
