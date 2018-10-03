@@ -2,11 +2,11 @@
 
 
 ### Table of Contents
-1. [Description]((https://github.com/joedan138/hangman-game#description)  
-2. [Languages](https://github.com/joedan138/hangman-game#languages)  
-3. [Challenges](https://github.com/joedan138/hangman-game#description)  
-4. [Issues](https://github.com/joedan138/hangman-game#description)  
-5. [Desired Features](https://github.com/joedan138/hangman-game#description)  
+1. [Description](https://github.com/joedan138/hangman-game#description)  
+2. [Languages And Libraries](https://github.com/joedan138/hangman-game#languages-and-libraries)  
+3. [Challenges](https://github.com/joedan138/hangman-game#challenges)  
+4. [Issues](https://github.com/joedan138/hangman-game#issues)  
+5. [Desired Features](https://github.com/joedan138/hangman-game#desired-features)  
 
 
 <a name="Description"></a>
