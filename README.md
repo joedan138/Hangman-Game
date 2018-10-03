@@ -19,7 +19,11 @@ This is a simple version of hangman with a wild west feel. All of the words to g
 
 > **Below is an image of the gameplay**
 
-![alt text](https://github.com/joedan138/hangman-game/assets/images/gameplay.png "Gameplay")
+![Gameplay][gameplay]
+
+[gameplay]: https://github.com/joedan138/hangman-game/assets/images/gameplay.png "Gameplay"
+
+
 
 
 <a name="languages"></a>  
