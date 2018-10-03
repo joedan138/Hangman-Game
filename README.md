@@ -15,13 +15,13 @@ This is a simple version of hangman with a wild west feel. All of the words to g
 
 > **Below is an image of the landing page for the project**
 
-![alt text](https://github.com/joedan138/hangman-game/assets/images/landing_page.png "Landing Page")
+![alt text](https://github.com/joedan138/Hangman-Game/blob/master/assets/images/landing_page.PNG) "Landing Page")
 
 > **Below is an image of the gameplay**
 
 ![Gameplay][gameplay]
 
-[gameplay]: https://github.com/joedan138/hangman-game/assets/images/gameplay.png "Gameplay"
+[gameplay]: https://github.com/joedan138/Hangman-Game/blob/master/assets/images/gameplay.PNG "Gameplay"
 
 
 
